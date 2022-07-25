@@ -1,0 +1,149 @@
+<html>
+<head>
+	<title>registration Form Submission</title>
+</head>
+<body>
+	<script>
+		function validate(){
+	Let username=document.getElementById('username').value;		
+	Let id=document.getElementById('id').value;	
+	Let password=document.getElementById('password').value;
+	Let confirm=document.getElementById('confirm').value;		
+	Let pnumber=document.getElementById('pnumber').value;	
+	Let email=document.getElementById('email').value;		
+	Let dob=document.getElementById('dob').value;	
+	if(username!=""){
+		return true;
+	}
+  else{
+  	document.getElementById("p")innerHTML="NULL NAME";
+  	return false;
+  }
+
+  }
+  if(id!=""){
+  		return true;
+	}
+  else{
+  	document.getElementById("a")innerHTML="NULL id";
+  	return false;
+  	 if(password!=""){
+  		return true;
+	}
+  else{
+  	document.getElementById("r")innerHTML="NULL password";
+  	
+  	return false;
+ if(confirm!=""){
+  		return true;
+	}
+  else{
+  	
+  	return false;
+  	 if(pnumber!=""){
+  		return true;
+	}
+  else{
+  	document.getElementById("s")innerHTML="NULL phone number";
+  	
+  	return false;
+  	 if(email!=""){
+  		return true;
+	}
+  else{
+  	document.getElementById("b")innerHTML="NULL EMAIL";
+  	
+  	return false;
+  	 if(dob!=""){
+  		return true;
+	}
+  else{
+  	document.getElementById("")innerHTML="NULL dob";
+  	
+  	return false;
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+		<form  method="post" enctype=""onsubmit="return validate()">
+			<fieldset>
+				<legend>Registration</legend>
+				<table>
+					<tr>
+						<td>Name</td></tr>
+						<tr>
+						<td><input type="text" name="username" value=""></td>
+						<td id="p"></td>
+					</tr>
+					<tr>
+						<td>ID</td>
+						</tr>
+						<tr>
+						<td><input type="Number" name="id" value=""></td>
+						<td id="a"></td>
+					</tr>
+					
+					<tr>
+						<td>password</td></tr>
+						<tr>
+						<td><input type="password" name="password" value=""></td>
+						<td id="r"></td>
+					</tr>
+					<tr>
+						<td>confirm_password</td></tr>
+						<tr>
+						<td><input type="password" name="confirm" value=""></td>
+						
+					</tr>
+					<tr>
+						<td>Phone_Number</td></tr>
+						<tr>
+						<td><input type="text" name="Pnumber" value=""></td>
+						<td id="s"></td>
+					</tr>
+					<tr>
+						<td>Email</td></tr>
+						<tr>
+						<td><input type="email" name="email" value=""></td>
+						<td id="b"></td>
+					</tr>
+						<tr>
+						<td>DOB</td></tr>
+						<tr>
+						<td><input type="date" name="dob" value=""></td>
+						<td id=""></td>
+					</tr>
+					<tr>
+						<td>Address</td></tr>
+						<tr>
+						<td >
+							<textarea style="height: 70px;width: 180px;"></textarea>
+						</td>
+					</tr>
+					<td><br></td>
+					
+					<tr>
+						<td>
+							<input type="submit" name="" value="SignUp">
+							<a href="signup.html"> Signin </a>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+</body>
+</html>
